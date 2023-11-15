@@ -1,0 +1,10 @@
+<h2>Ataque com Habilidade</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+                @Html.DisplayName("Habilidade")
+                <div class="col-md-6">
+    @Html.DropDownListFor(model => model.HabilidadeId, new SelectList(@ViewBag.ListaHabilidades, "Id", "Nome"), "---Selecione---", new { @class = "form-control" })</div>></div>
+    
+    
+}
